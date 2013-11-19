@@ -6,7 +6,7 @@ Add the following to your root composer.json file:
 
     {
         "require": {
-            "frizzy/twig-slim": "0.*"
+            "frizzy/slim-twig-extension": "0.1.*"
         }
     }
 
