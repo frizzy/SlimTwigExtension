@@ -7,7 +7,7 @@
  * @copyright   2013 Bernard van Niekerk
  * @link        https://github.com/frizzy/SlimTwigExtension
  * @license     http://paperjaw.com/license
- * @version     0.1.0
+ * @version     0.1.1
  * @package     SlimTwigExtension
  *
  * MIT LICENSE
