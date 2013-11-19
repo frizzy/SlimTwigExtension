@@ -1,0 +1,26 @@
+{
+    "name": "frizzy/twig-slim",
+    "type": "library",
+    "description": "Twig extension for the Slim framework",
+    "keywords": ["twig", "slim"],
+    "homepage": "http://github.com/frizzy/twig-slim",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bernard van Niekerk",
+            "email": "frizzy@paperjaw.com",
+            "homepage": "https://paperjaw.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "slim/slim": ">=2.3.5@stable",
+        "leafo/lessphp": ">=0.4.0@stable",
+        "twig/twig": "1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Frizzy\\Slim\\Twig": "."
+        }
+    }
+}
