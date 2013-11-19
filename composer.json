@@ -1,9 +1,9 @@
 {
-    "name": "frizzy/twig-slim",
+    "name": "frizzy/slim-twig-extension",
     "type": "library",
     "description": "Twig extension for the Slim framework",
     "keywords": ["twig", "slim"],
-    "homepage": "http://github.com/frizzy/twig-slim",
+    "homepage": "https://github.com/frizzy/SlimTwigExtension",
     "license": "MIT",
     "authors": [
         {
