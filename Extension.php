@@ -7,7 +7,7 @@
  * @copyright   2013 Bernard van Niekerk
  * @link        https://github.com/frizzy/SlimTwigExtension
  * @license     http://paperjaw.com/license
- * @version     0.1.1
+ * @version     0.1.2
  * @package     SlimTwigExtension
  *
  * MIT LICENSE
@@ -53,7 +53,7 @@ class Extension extends Twig_Extension
     {
         return 'slim';
     }
-    
+
     /**
      * Get functions
      *
@@ -69,7 +69,7 @@ class Extension extends Twig_Extension
             new Twig_SimpleFunction('url', array($this, 'getUrl'))
         );
     }
-    
+
     /**
      * Render route
      *
@@ -108,7 +108,7 @@ class Extension extends Twig_Extension
             ob_start();
             $route->dispatch();
 
-            return ob_get_clean();    
+            return ob_get_clean();
         }
         throw new InvalidArgumentException(sprintf(
             'No route matching path "%s" with method "%s"',
@@ -116,7 +116,7 @@ class Extension extends Twig_Extension
             $method
         ));
     }
-    
+
     /**
      * Render template
      *
@@ -132,9 +132,10 @@ class Extension extends Twig_Extension
         foreach ($data as $name => $value) {
             $view->set($name, $value);
         }
+
         return $view->render($template);
     }
-    
+
     /**
      * Get path
      *
@@ -173,7 +174,7 @@ class Extension extends Twig_Extension
         if (isset($options['path'])) {
             $url .= '/' . ltrim($options['path'], '/');
         }
-        
+
         return $url;
     }
 }
